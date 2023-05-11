@@ -10,7 +10,7 @@ app.engine('jsx', require('jsx-view-engine').createEngine())
 //routes
 // Index : Show all the things! - GET /pokemons
 app.get('/', (req, res) =>{
-    res.send('Welcome to the Pokemon App!')
+    res.send('<a href="/pokemon">Welcome to the Pokemon App!</a>')
 })
 app.get('/pokemon', (req, res) =>{
     res.render('Index',{pokemons: pokemon})
